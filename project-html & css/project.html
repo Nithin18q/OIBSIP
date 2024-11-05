@@ -1,0 +1,330 @@
+<style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #e7f3ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: #005f73;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #94d2bd;
+}
+
+.cta {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta:hover {
+    background-color: #ff9f9f;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://example.com/cricket-hero.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #005f73;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #e0fbfc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.feature-info {
+    padding: 15px;
+}
+
+.feature-info h3 {
+    font-size: 1.8rem;
+    color: #005f73;
+}
+
+.feature-info p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background: #ff6f61;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.call-to-action p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #005f73;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.testimonial span {
+    font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+    background-color: #005f73;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .features h2 {
+        font-size: 2rem;
+    }
+    .call-to-action h2 {
+        font-size: 2rem;
+    }
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Mania</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Cricket Mania</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Live Scores</a>
+                <a href="#">Highlights</a>
+                <a href="#">Player Stats</a>
+                <a href="#" class="cta">Join Now</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Cricket Mania: Dive into the Excitement!</h2>
+            <p>Catch all the live scores, highlights, and stats in one place.</p>
+            <a href="#" class="cta">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Features You'll Love</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <img src="live score2.jpg".jpg" alt="Live Scores" />
+                    <div class="feature-info">
+                        <h3>Live Scores</h3>
+                        <p>Real-time match scores that keep you in the loop.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="highlights.jpg" alt="Match Highlights" />
+                    <div class="feature-info">
+                        <h3>Match Highlights</h3>
+                        <p>Never miss a moment with our detailed match highlights.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="player stats.jpg" alt="Player Stats" />
+                    <div class="feature-info">
+                        <h3>Player Stats</h3>
+                        <p>Analyze players’ performance and stats in-depth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="call-to-action">
+        <div class="container">
+            <h2>Join the Cricket Community!</h2>
+            <p>Sign up to receive the latest updates and special offers.</p>
+            <a href="#" class="cta">Sign Up</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial">
+                <p>"This is the best app for cricket fans! Always updated!"</p>
+                <span>- Nithin</span>
+            </div>
+            <div class="testimonial">
+                <p>"I love the live updates and stats. Essential for any fan!"</p>
+                <span>- chauhan</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cricket Mania. All rights reserved.</p>
+            <nav>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
